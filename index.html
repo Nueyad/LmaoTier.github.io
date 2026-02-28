@@ -11,6 +11,20 @@ body {
   background: #0f172a;
   color: white;
 }
+  <div class="navbar">
+  <div class="logo">LMAOTIERS</div>
+
+  <div class="menu">
+    <a href="#">Home</a>
+    <a href="#">Rankings</a>
+    <a href="#">Discord</a>
+    <a href="#">API Docs</a>
+  </div>
+
+  <div class="search">
+    <input type="text" placeholder="Search player...">
+  </div>
+</div>
 
 h1 {
   text-align: center;
@@ -63,6 +77,42 @@ h1 {
   border-bottom: none;
 }
 </style>
+  .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #0b1220;
+  padding: 15px 25px;
+  border-bottom: 1px solid #1e293b;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #4ade80, #facc15);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #cbd5e1;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: white;
+}
+
+.search input {
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: none;
+  background: #1e293b;
+  color: white;
+}
 </head>
 
 <body>
