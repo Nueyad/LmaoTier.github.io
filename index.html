@@ -2,57 +2,126 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Nexar Member Tier</title>
+<title>Team Tier Ranking</title>
+
 <style>
-body{
- background:#0f0f0f;
- color:white;
- font-family:Arial;
- text-align:center;
-}
-.tier{
- margin:20px;
- padding:15px;
- border-radius:10px;
- width:80%;
- margin-left:auto;
- margin-right:auto;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: white;
 }
 
-/* Màu theo cấp */
-.ht1{background:#ff000020;border:2px solid #ff0000;}
-.lt1{background:#ff550020;border:2px solid #ff5500;}
-.ht2{background:#ffaa0020;border:2px solid #ffaa00;}
-.lt2{background:#ffee0020;border:2px solid #ffee00;}
-.ht3{background:#00ff0020;border:2px solid #00ff00;}
-.lt3{background:#00ffaa20;border:2px solid #00ffaa;}
-.ht4{background:#00aaff20;border:2px solid #00aaff;}
-.lt4{background:#0055ff20;border:2px solid #0055ff;}
-.ht5{background:#aa00ff20;border:2px solid #aa00ff;}
-.lt5{background:#ff00ff20;border:2px solid #ff00ff;}
+h1 {
+  text-align: center;
+  padding: 20px;
+}
 
-h1{color:red;}
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.tier {
+  width: 220px;
+  background: #1e293b;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.tier h2 {
+  margin: 0;
+  padding: 12px;
+  text-align: center;
+}
+
+.ht1 h2 { background: gold; color: black; }
+.lt1 h2 { background: #facc15; color: black; }
+
+.ht2 h2 { background: #c0c0c0; color: black; }
+.lt2 h2 { background: #a3a3a3; color: black; }
+
+.ht3 h2 { background: #38bdf8; }
+.lt3 h2 { background: #0ea5e9; }
+
+.ht4 h2 { background: #34d399; color: black; }
+.lt4 h2 { background: #10b981; }
+
+.ht5 h2 { background: #f87171; }
+.lt5 h2 { background: #ef4444; }
+
+.player {
+  padding: 8px;
+  border-bottom: 1px solid #334155;
+  text-align: center;
+}
+
+.player:last-child {
+  border-bottom: none;
+}
 </style>
 </head>
+
 <body>
 
-<h1>🔥 NEXAR MEMBER TIER 🔥</h1>
-<p>Xếp hạng nội bộ team</p>
+<h1>TEAM RANKING</h1>
 
-<div class="tier ht1"><h2>HT1</h2><p>Player</p></div>
-<div class="tier lt1"><h2>LT1</h2><p>Player</p></div>
+<div class="container">
 
-<div class="tier ht2"><h2>HT2</h2><p>Player</p></div>
-<div class="tier lt2"><h2>LT2</h2><p>Player</p></div>
+  <div class="tier ht1">
+    <h2>HT1</h2>
+    <div class="player">Player1</div>
+  </div>
 
-<div class="tier ht3"><h2>HT3</h2><p>Player</p></div>
-<div class="tier lt3"><h2>LT3</h2><p>Player</p></div>
+  <div class="tier lt1">
+    <h2>LT1</h2>
+    <div class="player">Player2</div>
+  </div>
 
-<div class="tier ht4"><h2>HT4</h2><p>Player</p></div>
-<div class="tier lt4"><h2>LT4</h2><p>Player</p></div>
+  <div class="tier ht2">
+    <h2>HT2</h2>
+    <div class="player">Player3</div>
+  </div>
 
-<div class="tier ht5"><h2>HT5</h2><p>Player</p></div>
-<div class="tier lt5"><h2>LT5</h2><p>Player</p></div>
+  <div class="tier lt2">
+    <h2>LT2</h2>
+    <div class="player">Player4</div>
+  </div>
+
+  <div class="tier ht3">
+    <h2>HT3</h2>
+    <div class="player">Player5</div>
+  </div>
+
+  <div class="tier lt3">
+    <h2>LT3</h2>
+    <div class="player">Player6</div>
+  </div>
+
+  <div class="tier ht4">
+    <h2>HT4</h2>
+    <div class="player">Player7</div>
+  </div>
+
+  <div class="tier lt4">
+    <h2>LT4</h2>
+    <div class="player">Player8</div>
+  </div>
+
+  <div class="tier ht5">
+    <h2>HT5</h2>
+    <div class="player">Player9</div>
+  </div>
+
+  <div class="tier lt5">
+    <h2>LT5</h2>
+    <div class="player">Player10</div>
+  </div>
+
+</div>
 
 </body>
 </html>
